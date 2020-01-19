@@ -1,0 +1,99 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "jquery": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "ignorePatterns": [
+        "node_modules/",
+        "src/renderer/js/semantic.min.js"
+    ],
+    "rules": {
+        "indent": [
+            "warn",
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            "warn",
+            "double"
+        ],
+        "semi": "off",
+        "@typescript-eslint/semi": "error",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "vars": "local",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
+        ],
+        "camelcase": [
+            "warn",
+            {
+                "properties": "never",
+                "ignoreImports": true,
+                "allow": [
+                    "child_process"
+                ]
+            }
+        ],
+        "no-dupe-else-if": "error",
+        "no-trailing-spaces": [
+            "warn",
+            {
+                "skipBlankLines": true
+            }
+        ],
+        "no-empty": [
+            "error",
+            {
+                "allowEmptyCatch": true
+            }
+        ],
+        "no-multi-spaces": [
+            "error",
+            {
+                "ignoreEOLComments": false
+            }
+        ],
+        "yoda": "warn",
+        "no-inner-declarations": "off",
+        "eol-last": "error",
+        "prefer-arrow-callback": "warn",
+        "require-atomic-updates": "warn",
+        "no-use-before-define": "error",
+        "comma-dangle": "error",
+        "no-unneeded-ternary": "warn",
+        "spaced-comment": "warn",
+        "arrow-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "prefer-const": "warn",
+        "space-before-blocks": "error"
+    }
+}
