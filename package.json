@@ -1,5 +1,5 @@
 {
-  "name": "komponentz",
+  "name": "kontroller",
   "version": "0.0.1",
   "description": "A MVC framework for existing HTML",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukechu10/komponentz.git"
+    "url": "git+https://github.com/lukechu10/kontroller.git"
   },
   "keywords": [
     "mvc",
@@ -19,9 +19,9 @@
   "author": "Luke Chu",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/lukechu10/komponentz/issues"
+    "url": "https://github.com/lukechu10/kontroller/issues"
   },
-  "homepage": "https://github.com/lukechu10/komponentz#readme",
+  "homepage": "https://github.com/lukechu10/kontroller#readme",
   "devDependencies": {
     "typescript": "^3.7.5"
   }
